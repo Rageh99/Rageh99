@@ -1,12 +1,167 @@
-- 👋 Hi, I’m @Rageh99
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
 
-<!---
-Rageh99/Rageh99 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rageh Poultry Farming</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="portfolio.html">Our Farm Portfolio</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+  <main>
+    <h1>About Rageh Poultry Farming</h1>
+    <p>Founded by Ahmed Mullah, Rageh Poultry Farming has been serving Hennepin County, Minnesota, with quality poultry products. Our commitment to sustainable farming and animal welfare sets us apart in the market.</p>
+</main>
+      <!-- Page-specific content will go here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rageh Poultry Farming. All Rights Reserved.</p>
+    </footer>
+<script src="js/script.js"></script>
+<main>
+    <h1>About Rageh Poultry Farming</h1>
+    <p>Founded by Ahmed Mullah, Rageh Poultry Farming has been serving Hennepin County, Minnesota, with quality poultry products. Our commitment to sustainable farming and animal welfare sets us apart in the market.</p>
+</main>
+<main>
+    <h1>Our Products</h1>
+    <p>We offer a variety of poultry products including:</p>
+    <ul>
+        <li>Fresh Chicken</li>
+        <li>Eggs</li>
+        <li>Organic Chicken Feed</li>
+    </ul>
+    <img src="img/products.jpg" alt="Rageh Poultry Products">
+</main>
+
+<main>
+    <h1>Our Farm Portfolio</h1>
+    <p>Explore some of our work and achievements in poultry farming:</p>
+    <ul>
+        <li>Sustainable chicken farming techniques</li>
+        <li>State-of-the-art poultry management systems</li>
+        <li>Successful collaborations with local food markets</li>
+    </ul>
+    <img src="img/portfolio.jpg" alt="Rageh Poultry Portfolio">
+</main>
+<main>
+    <h1>Contact Us</h1>
+    <p>If you have any inquiries, feel free to reach out:</p>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</main>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    color: #4CAF50;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+document.querySelector('form').addEventListener('submit', function (event) {
+    const name = document.querySelector('#name').value;
+    const email = document.querySelector('#email').value;
+
+    if (name === '' || email === '') {
+        event.preventDefault();
+        alert('Please fill in all fields.');
+    }
+});
+
+</body>
+</html>
